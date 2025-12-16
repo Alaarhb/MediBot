@@ -2,9 +2,6 @@
 
 MediBot is an intelligent, NLP-powered chatbot designed to provide basic medical information, symptom checking, and real-time utilities like hospital search and drug information lookup. Built with Python (Flask) and a custom Machine Learning model.
 
-![MediBot UI](https://via.placeholder.com/800x400?text=MediBot+Interface+Preview) 
-*(Replace with actual screenshot if available)*
-
 ## ✨ Key Features
 
 *   **🧠 AI Intent Recognition**: Uses Natural Language Processing (NLTK + TF-IDF + LinearSVC) to understand user queries, including slang and synonyms.
