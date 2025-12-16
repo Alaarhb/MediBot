@@ -1,0 +1,6 @@
+flask
+nltk
+numpy
+scikit-learn
+colorama
+requests
