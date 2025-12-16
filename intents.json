@@ -1,0 +1,316 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "Good day",
+                "Is anyone there?",
+                "Good morning",
+                "Good evening",
+                "Hola",
+                "Hi there",
+                "Hey bot",
+                "Yo",
+                "Greetings",
+                "Hello bot",
+                "sup",
+                "howdy",
+                "good afternoon"
+            ],
+            "responses": [
+                "Hello! I am a medical chatbot assistant. How can I help you regarding your health today?",
+                "Hi there. I can assist you with general medical information. What's on your mind?",
+                "Greetings. Please describe your symptoms or ask a medical question."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Thanks, bye",
+                "I'm done",
+                "Exit",
+                "Quit",
+                "Leaving now",
+                "Have a good day"
+            ],
+            "responses": [
+                "See you later. Stay healthy!",
+                "Goodbye! Remember to consult a doctor if symptoms persist.",
+                "Take care of yourself!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thanks a lot",
+                "I appreciate it",
+                "Thx",
+                "Cheers"
+            ],
+            "responses": [
+                "You're welcome!",
+                "Glad I could help.",
+                "My pleasure. Stay safe."
+            ]
+        },
+        {
+            "tag": "symptom_flu",
+            "patterns": [
+                "I have a fever and a runny nose",
+                "My body aches and I feel cold",
+                "I think I have the flu",
+                "Sore throat and fever",
+                "Coughing and sneezing a lot",
+                "I feel chilly and weak",
+                "My temperature is high",
+                "I have the chills and a headache",
+                "My kid has a high temp",
+                "Feeling feverish",
+                "running a temperature",
+                "body on fire",
+                "shivering"
+            ],
+            "responses": [
+                "It sounds like you might have flu-like symptoms. Common advice includes getting plenty of rest, staying hydrated, and taking over-the-counter pain relievers if needed.",
+                "Flu symptoms can be tough. Rest, fluids, and monitoring your temperature are key. Please consult a healthcare professional for a proper diagnosis."
+            ]
+        },
+        {
+            "tag": "symptom_migraine",
+            "patterns": [
+                "I have a terrible headache",
+                "My head hurts on one side",
+                "I am sensitive to light and sound",
+                "I feel nauseous and have a headache",
+                "My head is throbbing",
+                "I'm seeing spots and my head hurts",
+                "my head hurts a lot",
+                "severe migraine",
+                "splitting headache",
+                "visual aura",
+                "blind spot",
+                "pounding head"
+            ],
+            "responses": [
+                "These could be signs of a migraine. Resting in a dark, quiet room often helps. Ibuprofen or Acetaminophen might provide relief.",
+                "Migraines can be debilitating. Try to avoid triggers and rest. If vision changes or speech issues occur, seek medical help."
+            ]
+        },
+        {
+            "tag": "emergency_chest_pain",
+            "patterns": [
+                "I have chest pain",
+                "My chest feels heavy",
+                "Sharp pain in my chest and left arm",
+                "I can't breathe properly and my chest hurts",
+                "I feel a crushing pressure on my chest",
+                "Heart attack symptoms",
+                "chest tightness",
+                "elephant on chest",
+                "jaw pain"
+            ],
+            "responses": [
+                "⚠️ EMERGENCY: Chest pain can be serious. Please call emergency services (911 or your local number) immediately.",
+                "⚠️ If you are experiencing chest pain, especially with shortness of breath or arm pain, seek immediate emergency medical attention."
+            ]
+        },
+        {
+            "tag": "symptom_stomach_pain",
+            "patterns": [
+                "My stomach hurts",
+                "I have belly pain",
+                "I feel cramps in my abdomen",
+                "My tummy aches",
+                "I have severe indigestion",
+                "my tummy hurts",
+                "stomach is killing me",
+                "stomach pain severe",
+                "I ate something bad",
+                "food poisoning",
+                "tummy hurts"
+            ],
+            "responses": [
+                "Stomach pain can have many causes. Avoid solid foods for a few hours and stick to clear fluids. If the pain is severe, persistent, or accompanied by vomiting/blood, see a doctor immediately.",
+                "For mild stomach aches, try peppermint tea or a heating pad. If it is sharp lower-right pain (appendix) or severe, go to the ER."
+            ]
+        },
+        {
+            "tag": "symptom_skin_rash",
+            "patterns": [
+                "I have a red rash on my arm",
+                "My skin is itchy and red",
+                "I have spots on my skin",
+                "Itchy bumps on my body",
+                "rash on leg",
+                "hive breakout",
+                "skin irritation"
+            ],
+            "responses": [
+                "Skin rashes can be caused by allergies, irritants, or infections. Keep the area clean and avoid scratching. An OTC hydrocortisone cream might help itchiness.",
+                "If the rash is accompanied by fever or difficulty breathing, seek help immediately. Otherwise, it might be an allergic reaction."
+            ]
+        },
+        {
+            "tag": "mental_health",
+            "patterns": [
+                "I feel sad and depressed",
+                "I am very anxious",
+                "I feel hopeless",
+                "I can't stop worrying",
+                "I'm feeling down",
+                "I feel very sad",
+                "depressed lately"
+            ],
+            "responses": [
+                "I'm sorry you're feeling this way. You are not alone. Please talk to a mental health professional or a trusted friend.",
+                "Mental health is just as important as physical health. Consider reaching out to a therapist."
+            ]
+        },
+        {
+            "tag": "pharmacy_inquiry",
+            "patterns": [
+                "Where can I buy medicine?",
+                "Is there a pharmacy nearby?",
+                "Do I need a prescription?",
+                "Can I get antibiotics?"
+            ],
+            "responses": [
+                "You can buy over-the-counter medicines at local pharmacies. For antibiotics and stronger medications, you will need a doctor's prescription.",
+                "I cannot prescribe medication, but your local pharmacist can advise on OTC remedies."
+            ]
+        },
+        {
+            "tag": "drug_lookup",
+            "patterns": [
+                "What is the use of",
+                "Tell me about the drug",
+                "What are the side effects of",
+                "Info on medication",
+                "Can you look up",
+                "Search for drug",
+                "Details about medicine",
+                "Is this drug safe",
+                "Usage of",
+                "Tell me about Aspirin",
+                "side effects of Tylenol",
+                "is advil safe?",
+                "dosage for",
+                "can I take"
+            ],
+            "responses": [
+                "I can look up drug information for you. Please provide the exact brand name.",
+                "Let me check the FDA database. What is the drug name?"
+            ]
+        },
+        {
+            "tag": "hospital_search",
+            "patterns": [
+                "Find a hospital near me",
+                "Where is the nearest clinic?",
+                "I need a doctor",
+                "Medical center location",
+                "Hospitals in",
+                "Find hospital near",
+                "Is there a hospital in",
+                "Look for hospitals nearby",
+                "I need urgent medical care",
+                "Show me clinics in",
+                "Locate a medical center",
+                "Are there any hospitals around",
+                "Emergency room near me",
+                "is there any clinic in London",
+                "paramedic nearby",
+                "ER",
+                "emergency room",
+                "walk-in clinic"
+            ],
+            "responses": [
+                "I cannot access your location directly, but you can search for 'hospitals near me' on Google Maps or call emergency services if it's urgent.",
+                "Please check your local maps for the nearest healthcare facility."
+            ]
+        },
+        {
+            "tag": "mental_health_panic",
+            "patterns": [
+                "I'm having a panic attack",
+                "I can't breathe and I'm scared",
+                "My heart is racing and I'm terrified",
+                "I feel like I'm going to die",
+                "panicking right now",
+                "help me i am panicking",
+                "panicking right now"
+            ],
+            "responses": [
+                "Take a deep breath. Inhale for 4 seconds, hold for 7, and exhale for 8. You are safe.",
+                "Focus on your breathing. You are not in danger. Try the 5-4-3-2-1 grounding technique."
+            ]
+        },
+        {
+            "tag": "injury_general",
+            "patterns": [
+                "I twisted my ankle",
+                "I have a burn on my hand",
+                "I cut my finger",
+                "I fell down",
+                "bruised knee",
+                "bleeding from cut",
+                "sprained wrist",
+                "burn mark"
+            ],
+            "responses": [
+                "For minor injuries, clean the area and apply first aid. For burns, run cool water over it. If bleeding is heavy or you suspect a fracture, seek medical help.",
+                "Apply ice to sprains to reduce swelling. Keep cuts clean and covered. If in doubt, visit an urgent care center."
+            ]
+        },
+        {
+            "tag": "condition_inquiry",
+            "patterns": [
+                "my blood pressure is high",
+                "diabetes symptoms",
+                "what is hypertension",
+                "signs of high cholesterol",
+                "asthma attack symptoms"
+            ],
+            "responses": [
+                "Chronic conditions like high blood pressure or diabetes require long-term management. Please consult your primary care physician for a plan.",
+                "I can provide general info, but for specific readings (like high BP), it's best to see a doctor immediately if they are critical."
+            ]
+        },
+        {
+            "tag": "appointment_booking",
+            "patterns": [
+                "can I book an appointment?",
+                "I need to see a doctor",
+                "schedule a visit",
+                "what are your hours?",
+                "make a reservation"
+            ],
+            "responses": [
+                "I am an AI bot and cannot book real appointments. Please contact your local clinic directly.",
+                "I don't have access to scheduling systems. You'll need to call your doctor's office."
+            ]
+        },
+        {
+            "tag": "meta_bot",
+            "patterns": [
+                "who created you?",
+                "are you a human?",
+                "what is your name?",
+                "who made you"
+            ],
+            "responses": [
+                "I am MediBot, an AI health assistant created to demonstrate NLP capabilities.",
+                "I'm a robot! Coping with non-sentience quite well, thanks for asking."
+            ]
+        }
+    ]
+}
